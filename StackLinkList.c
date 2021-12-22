@@ -8,7 +8,7 @@ struct node
 	struct node* next;
 
 };
-
+//yorum
 struct node* top = NULL;
 
 void push(int x)
