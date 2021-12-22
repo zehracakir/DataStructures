@@ -13,10 +13,10 @@ struct node* top = NULL;
 
 void push(int x)
 {
-	struct node* joseph = (struct node*)malloc(sizeof(struct node));
-	joseph->data = x;
-	joseph->next = top;
-	top = joseph;
+	struct node* newElement = (struct node*)malloc(sizeof(struct node));
+	newElement->data = x;
+	newElement->next = top;
+	top = newElement;
 }
 
 
@@ -26,37 +26,11 @@ int pop()
 	if (top == NULL)
 		return INT_MIN;
 	temp = top;
-	int zehra = temp->data;
+	int data1 = temp->data;
 	top = top->next;
 	free(temp);
-	return zehra;
+	return data1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //void push(int x)
 //{
 //	struct node* newElement = (struct node*)malloc(sizeof(struct node));
