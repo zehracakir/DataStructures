@@ -19,7 +19,7 @@ void EnQueue(int queue1[], int number) {
 		rear++;
 		queue[rear] = number;
 	}
-
+	
 	printf("Element added\n");
 
 }
